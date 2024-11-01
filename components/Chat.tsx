@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface ChatItem {
@@ -76,7 +77,7 @@ const Chat: React.FC<ChatProps> = ({ items }) => {
                   selectedUser?.id === item.id ? 'bg-gray-200' : ''
                 }`}
               >
-                <img src={item.avatar} alt={item.name} className="w-10 h-10 rounded-full mr-3" />
+                <Image width={50} height={50} src={item.avatar} alt={item.name} className="w-10 h-10 rounded-full mr-3" />
                 <div>
                   <h4 className="font-semibold">{item.name}</h4>
                   <p className="text-xs text-gray-500">{item.status}</p>
@@ -101,7 +102,7 @@ const Chat: React.FC<ChatProps> = ({ items }) => {
             {/* User Info */}
             <div className="flex items-center justify-between border-b pb-2 mb-4">
               <div className="flex items-center">
-                <img src={selectedUser.avatar} alt={selectedUser.name} className="w-10 h-10 rounded-full mr-3" />
+                <Image width={50} height={50} src={selectedUser.avatar} alt={selectedUser.name} className="w-10 h-10 rounded-full mr-3" />
                 <h2 className="font-semibold">{selectedUser.name}</h2>
               </div>
               <button

@@ -27,7 +27,7 @@ const IndexPage: React.FC = () => {
             {
                 id: 2,
                 name: 'HeRa Khan',
-                avatar: '/user/2.jpg',
+                avatar: '/user/1.jpg',
                 status: 'Offline',
                 address: "503 Broadway",
                 city: "New York",

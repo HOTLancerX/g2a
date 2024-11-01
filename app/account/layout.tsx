@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
       <main>
         <Header menu={0} />
-        <div className=" container my-4">
+        <div className="container my-4">
           <div className="bg-white">
             <div className="flex flex-col md:flex-row gap-4 w-full p-2 md:p-4 pb-0">
               <div className="w-full md:w-1/2">

@@ -9,7 +9,7 @@ const IndexPage: React.FC = () => {
           <div className="flex flex-col items-center w-full max-w-3xl">
             <Link href="/" className="mb-4">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 width={150}
                 height={50}
                 alt='logo'
