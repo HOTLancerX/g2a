@@ -18,7 +18,7 @@ const IndexPage: React.FC = () => {
                     width={1170}
                     height={90}
                     alt="ads"
-                    className="h-full w-full hover:opacity-90"
+                    className="h-full w-full hover:opacity-90 rounded-md"
                     />
                 </Link>
             </div>
@@ -238,7 +238,7 @@ const IndexPage: React.FC = () => {
                     "rating": 4.3
                 },
                 {
-                    "id": 1,
+                    "id": 7,
                     "title": "VR Headset",
                     "description": "Experience immersive VR gaming with a high-resolution display.",
                     "price": 300,
@@ -250,7 +250,7 @@ const IndexPage: React.FC = () => {
                     "rating": 4.7
                 },
                 {
-                    "id": 2,
+                    "id": 8,
                     "title": "External SSD for Gaming",
                     "description": "High-speed external SSD with 1TB storage for fast game loading.",
                     "price": 100,
@@ -261,7 +261,7 @@ const IndexPage: React.FC = () => {
                     "rating": 4.6
                 },
                 {
-                    "id": 3,
+                    "id": 9,
                     "title": "Gaming Console",
                     "description": "Next-gen console with stunning graphics and fast performance.",
                     "price": 500,
@@ -273,7 +273,7 @@ const IndexPage: React.FC = () => {
                     "rating": 4.8
                 },
                 {
-                    "id": 4,
+                    "id": 10,
                     "title": "Wireless Gaming Headset",
                     "description": "High-quality surround sound with noise cancellation.",
                     "price": 120,
@@ -285,7 +285,7 @@ const IndexPage: React.FC = () => {
                     "rating": 4.8
                 },
                 {
-                    "id": 5,
+                    "id": 11,
                     "title": "Mechanical Gaming Keyboard",
                     "description": "RGB backlighting with programmable keys.",
                     "price": 90,
@@ -297,7 +297,7 @@ const IndexPage: React.FC = () => {
                     "rating": 4.5
                 },
                 {
-                    "id": 6,
+                    "id": 12,
                     "title": "Gaming Mouse",
                     "description": "Ergonomic design with adjustable DPI settings.",
                     "price": 45,
