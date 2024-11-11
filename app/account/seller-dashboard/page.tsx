@@ -34,7 +34,7 @@ const demoData = [
 
 const IndexPage: React.FC = () => {
     return (
-        <Table title="Voting list" items={demoData} />
+        <Table title="Order List" link="/" items={demoData} />
     );
 };
 export default IndexPage;

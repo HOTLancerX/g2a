@@ -21,10 +21,11 @@ interface Deal {
 
 interface TableProps {
     title: string;
+    link?: string;
     items: Deal[];
 }
 
-const Table: React.FC<TableProps> = ({ items, title }) => {
+const Table: React.FC<TableProps> = ({ items, title, link }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -63,13 +64,23 @@ const Table: React.FC<TableProps> = ({ items, title }) => {
     <div>
       <div className="mb-4 flex flex-col md:flex-row md:items-center md:justify-between">
         <h1 className="text-2xl font-bold">{title}</h1>
-        <input
-          type="text"
-          placeholder="Search"
-          value={searchQuery}
-          onChange={handleSearch}
-          className="mt-2 md:mt-0 p-2 border outline-0 rounded-md w-full max-w-sm"
-        />
+        <div className="flex items-center">
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchQuery}
+            onChange={handleSearch}
+            className="mt-2 md:mt-0 p-2 border outline-0 rounded-md w-full max-w-sm"
+          />
+          {title && (
+            <Link
+              href={link}
+              className="bg-main text-white px-4 py-2 rounded ml-2 text-nowrap"
+            >
+              {title} add
+            </Link>
+          )}
+        </div>
       </div>
 
       <div className="overflow-x-auto">

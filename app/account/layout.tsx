@@ -112,7 +112,7 @@ export default function RootLayout({
             <MenusUser
               items={[
                 { title: "My order", link: '/account' },
-                { title: "Messenger", link: '/chat/1' },
+                { title: "Messenger", link: '/account/chat/1' },
                 { title: 'Setting', link: '/account/setting' },
                 { title: "Wishlist", link: '/account/wishlist' },
                 { title: "Seller dashboard", link: '/account/seller-dashboard' },
