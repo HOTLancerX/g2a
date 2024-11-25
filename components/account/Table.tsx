@@ -6,7 +6,7 @@ import ToggleSwitch from "./ToggleSwitch";
 
 interface Deal {
   title: string;
-  link?: any;
+  link?: string;
   img: string;
   price: string;
   originalPrice?: string;
@@ -21,7 +21,7 @@ interface Deal {
 
 interface TableProps {
     title: string;
-    link?: any;
+    link?: string;
     items: Deal[];
 }
 
@@ -98,7 +98,7 @@ const Table: React.FC<TableProps> = ({ items, title, link }) => {
             {paginatedItems.map((deal, index) => (
               <tr key={index} className="border-t border-gray-200">
                 <td className="py-3 px-6">
-                  <Link href={deal.link} className="flex items-center md:max-w-sm md:w-full w-96">
+                  <Link href={deal.link || "#"} className="flex items-center md:max-w-sm md:w-full w-96">
                     <Image
                       src={deal.img}
                       width={70}
