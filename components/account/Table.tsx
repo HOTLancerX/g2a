@@ -6,7 +6,7 @@ import ToggleSwitch from "./ToggleSwitch";
 
 interface Deal {
   title: string;
-  link: string;
+  link?: any;
   img: string;
   price: string;
   originalPrice?: string;
@@ -21,7 +21,7 @@ interface Deal {
 
 interface TableProps {
     title: string;
-    link?: string;
+    link?: any;
     items: Deal[];
 }
 
@@ -72,7 +72,7 @@ const Table: React.FC<TableProps> = ({ items, title, link }) => {
             onChange={handleSearch}
             className="mt-2 md:mt-0 p-2 border outline-0 rounded-md w-full max-w-sm"
           />
-          {title && (
+          {title && link && (
             <Link
               href={link}
               className="bg-main text-white px-4 py-2 rounded ml-2 text-nowrap"
@@ -137,7 +137,7 @@ const Table: React.FC<TableProps> = ({ items, title, link }) => {
                       <Link
                           href="/"
                       >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
                       </Link>
                       <Link
                           href="/"

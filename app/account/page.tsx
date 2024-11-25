@@ -29,7 +29,6 @@ const demoData = [
       merchant: "Walmart & More",
       activity: { likes: 17, comments: 8, views: 6200 },
     },
-    // ... Add more items if needed
   ]
 
 const IndexPage: React.FC = () => {
